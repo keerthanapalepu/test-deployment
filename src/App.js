@@ -5,18 +5,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+      <small>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</small>
+      <b>{process.env.REACT_APP_NOT_SECRET_CODE}</b>
+      <b>{process.env.REACT_APP_NAME}</b>
+      <form>
+        <input type="hidden" defaultValue={process.env.REACT_APP_NOT_SECRET_CODE} />
+      </form>
+      <b>{process.env.NODE_ENV === "development"? process.env.REACT_APP_DEVELOPMENT : process.env.REACT_APP_PRODUCTION}</b>
       </header>
     </div>
   );
