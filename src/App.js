@@ -13,12 +13,13 @@ function App() {
         <input type="hidden" defaultValue={process.env.REACT_APP_NOT_SECRET_CODE} />
       </form>
       <b>{process.env.NODE_ENV === "development"? process.env.REACT_APP_DEVELOPMENT : process.env.REACT_APP_PRODUCTION}</b>
-      </header>
       <h1>HELLO WORLD</h1>
       <h1>HELLO WORLD 2</h1>
       <h1>HELLO WORLD 3</h1>
       <h1>HELLO WORLD 4</h1>
       <h1>HELLO WORLD 5</h1>
+      </header>
+      
 <h1>UPDATED</h1>
     </div>
   );
