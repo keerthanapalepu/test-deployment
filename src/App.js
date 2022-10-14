@@ -9,7 +9,7 @@ function App() {
       <small>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</small>
       <b>{process.env.REACT_APP_NOT_SECRET_CODE}</b>
       <b>{process.env.REACT_APP_NAME}</b>
-      <b>{process.env.NORMAL_SECRET}</b>
+      <b>{process.env.REACT_APP_NORMAL_SECRET}</b>
       <b>{process.env.REACT_APP_SECRET}</b>
       <form>
         <input type="hidden" defaultValue={process.env.REACT_APP_NOT_SECRET_CODE} />
