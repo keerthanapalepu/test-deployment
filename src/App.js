@@ -9,6 +9,8 @@ function App() {
       <small>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</small>
       <b>{process.env.REACT_APP_NOT_SECRET_CODE}</b>
       <b>{process.env.REACT_APP_NAME}</b>
+      <b>{process.env.NORMAL_SECRET}</b>
+      <b>{process.env.REACT_APP_SECRET}</b>
       <form>
         <input type="hidden" defaultValue={process.env.REACT_APP_NOT_SECRET_CODE} />
       </form>
@@ -18,8 +20,8 @@ function App() {
       <h1>HELLO WORLD 3</h1>
       <h1>HELLO WORLD 4</h1>
       <h1>HELLO WORLD 5</h1>
-<h1>HELLO WORLD 5</h1>
-<h1>HELLO WORLD 7</h1>
+      <h1>HELLO WORLD 5</h1>
+      <h1>HELLO WORLD 7</h1>
       <h1>i know you will work</h1>
       </header>
       
