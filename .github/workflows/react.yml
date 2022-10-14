@@ -14,7 +14,9 @@ jobs:
       matrix:
         node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+    env:
+      REACT_APP_SECRET: ${{ secrets.REACT_APP_SECRET }}
+      NORMAL_SECRET: ${{ secrets.NORMAL_SECRET}}
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
@@ -22,9 +24,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-        env:
-         REACT_APP_SECRET: ${{ secrets.REACT_APP_SECRET }}
-         NORMAL_SECRET: ${{ secrets.NORMAL_SECRET}}
       - run: npm install
       - run: npm run build
       
