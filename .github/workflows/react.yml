@@ -22,6 +22,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
+        env:
+         REACT_APP_SECRET: ${{ secrets.REACT_APP_SECRET }}
+         NORMAL_SECRET: ${{ secrets.NORMAL_SECRET}}
       - run: npm install
       - run: npm run build
       
